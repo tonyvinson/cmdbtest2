@@ -29,7 +29,7 @@
 			</tr>
 		</thead>
 		<tbody>
-		<g:each in="${hostsList}" status="i" var="host">
+		<g:each in="${hostsInstanceList}" status="i" var="host">
 			<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 				<td>
 					<g:link action="show" id="${host.id}">${host.hostname }</g:link>
